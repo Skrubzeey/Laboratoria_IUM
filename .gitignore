@@ -25,6 +25,7 @@ results/
 *.log
 
 # Local datasets
+data
 data/raw/
 data/processed/
 

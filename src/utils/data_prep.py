@@ -1,13 +1,5 @@
 import pandas as pd
 import numpy as np
-from dotenv import load_dotenv
-from pathlib import Path
-import os
-
-# pobieranie danych z pliku env
-load_dotenv()
-data_path = Path(os.getenv("DATA_PATH"))
-
 
 # funkcja do zapisania danych w DataFrame
 def load_data(path):

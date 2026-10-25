@@ -1,9 +1,10 @@
 import pandas as pd
 import numpy as np
+import os
 
 # funkcja do zapisania danych w DataFrame
 def load_data(path):
-    data = pd.read_csv(path)
+    data = pd.read_csv(os.path.join(path, "data.csv"))
     return data
 
 

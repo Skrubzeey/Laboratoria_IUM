@@ -4,7 +4,7 @@ import os
 
 # funkcja do zapisania danych w DataFrame
 def load_data(path):
-    data = pd.read_csv(os.path.join(path, "data.csv"))
+    data = pd.read_csv(os.path.join(path, "diabetes.csv"))
     return data
 
 
@@ -22,9 +22,9 @@ def split_data(df, test_size, seed):
     train_indices = indices[:split]
     test_indices = indices[split:]
 
-    x_train = x[train_indices]
-    x_test = x[test_indices]
-    y_train = y[train_indices]
-    y_test = y[test_indices]
+    x_train = x.iloc[train_indices]
+    x_test = x.iloc[test_indices]
+    y_train = y.iloc[train_indices]
+    y_test = y.iloc[test_indices]
 
     return x_train, x_test, y_train, y_test

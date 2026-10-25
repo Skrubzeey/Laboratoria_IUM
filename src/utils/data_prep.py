@@ -19,8 +19,8 @@ def split_data(df, test_size, seed):
 
     indices = rng.permutation(len(y))
 
-    train_indices = indices[:split]
-    test_indices = indices[split:]
+    test_indices = indices[:split]
+    train_indices = indices[split:]
 
     x_train = x.iloc[train_indices]
     x_test = x.iloc[test_indices]

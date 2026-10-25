@@ -4,3 +4,4 @@ scikit-learn
 dotenv
 torch
 python-dotenv
+joblib

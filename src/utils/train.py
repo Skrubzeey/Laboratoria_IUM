@@ -1,5 +1,3 @@
-import numpy as np
-import pandas as pd
 import joblib
 from dotenv import load_dotenv
 from pathlib import Path
